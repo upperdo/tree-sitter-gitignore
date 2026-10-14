@@ -1,0 +1,54 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "TreeSitterGitignore-arm64-apple-macosx-debug.module": ["<TreeSitterGitignore-arm64-apple-macosx-debug.module>"]
+  "main": ["<TreeSitterGitignore-arm64-apple-macosx-debug.module>"]
+  "test": ["<TreeSitterGitignore-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/parser.c.o":
+    tool: clang
+    inputs: ["<TreeSitterGitignore-arm64-apple-macosx-debug.module-resources>","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/src/parser.c"]
+    outputs: ["/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/parser.c.o"]
+    description: "Compiling TreeSitterGitignore src/parser.c"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=TreeSitterGitignore","-fmodules-cache-path=/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/bindings/swift/TreeSitterGitignore","-I/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/src","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/parser.c.d","-std=c11","-c","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/src/parser.c","-o","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/parser.c.o"]
+    deps: "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/parser.c.d"
+
+  "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/scanner.c.o":
+    tool: clang
+    inputs: ["<TreeSitterGitignore-arm64-apple-macosx-debug.module-resources>","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/src/scanner.c"]
+    outputs: ["/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/scanner.c.o"]
+    description: "Compiling TreeSitterGitignore src/scanner.c"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx10.13","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=TreeSitterGitignore","-fmodules-cache-path=/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/ModuleCache","-I","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/bindings/swift/TreeSitterGitignore","-I/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/src","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/scanner.c.d","-std=c11","-c","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/src/scanner.c","-o","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/scanner.c.o"]
+    deps: "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/scanner.c.d"
+
+  "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore_TreeSitterGitignore.bundle/queries":
+    tool: copy-tool
+    inputs: ["/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/queries/"]
+    outputs: ["/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore_TreeSitterGitignore.bundle/queries/"]
+    description: "Copying /Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/queries"
+
+  "<TreeSitterGitignore-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/parser.c.o","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore.build/src/scanner.c.o"]
+    outputs: ["<TreeSitterGitignore-arm64-apple-macosx-debug.module>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/Package.swift","/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
+  "TreeSitterGitignore-arm64-apple-macosx-debug.module-resources":
+    tool: phony
+    inputs: ["/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore_TreeSitterGitignore.bundle/queries/"]
+    outputs: ["<TreeSitterGitignore-arm64-apple-macosx-debug.module-resources>"]
+

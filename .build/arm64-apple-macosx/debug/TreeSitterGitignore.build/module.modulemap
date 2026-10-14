@@ -1,0 +1,4 @@
+module TreeSitterGitignore {
+    umbrella "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/bindings/swift/TreeSitterGitignore"
+    export *
+}

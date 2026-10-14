@@ -1,0 +1,60 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore_TreeSitterGitignore.bundle/queries" : {
+      "inputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/queries"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/acidlake/Development/Labs/code-editor/codeedit-deps/tree-sitter-gitignore/.build/arm64-apple-macosx/debug/TreeSitterGitignore_TreeSitterGitignore.bundle/queries"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+
+  },
+  "targetDependencyMap" : {
+    "TreeSitterGitignore" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+
+  }
+}
